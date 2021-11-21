@@ -5,7 +5,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<style>
 		html {
-			background-image: url(https://cdnb.artstation.com/p/assets/images/images/036/569/393/4k/amir-zand-arrakeen-nights-artstation.jpg?1618004397);
+			background-image: url("./arrakis1.jpg");
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
@@ -17,11 +17,18 @@
 			position: absolute;
 			bottom:  0%;
 			left:  0px;
-			background-color:  rgba(0.4, 0.4, 0.4, 0.6);
-			backdrop-filter: blur(8px);
-			-webkit-backdrop-filter: blur(8px);
 			border-top-width: 1%;
 			border-top: 4px solid rgba(255,255,255,0.6);
+			z-index: 98;
+		}
+		.deco1bg{
+			position:absolute;
+			height:100%;
+			width:100%;
+			opacity:0.6;
+			z-index:1;
+			background: #000000;
+			z-index: -97;
 		}
 		.loadingcontainer{
 			width: 25%;
@@ -29,11 +36,13 @@
 			position: absolute;
 			bottom:  12.5%;
 			left:  1%;
+			z-index: 99;
 		}
 		.loadingtext{
 			font-size: 2.5vw;
 			font-family: 'Orbitron', sans-serif;
-			color: rgba(255, 255, 255, 0.7);
+			color: white;
+			z-index: 99;
 		}
 		.infocontainer{
 			width: 25%;
@@ -42,11 +51,13 @@
 			bottom:  0%;
 			max-height: 22%;
 			left:  1%;
+			z-index: 99;
 		}
 		.infotext{
 			font-size: 1.5vw;
 			font-family: 'Orbitron', sans-serif;
-			color: rgba(255, 255, 255, 0.7);
+			color: white;
+			z-index: 99;
 		}
 		.logo{
 			width:  30%;
@@ -56,17 +67,20 @@
 			float: right;
 			margin: 2%;
 			max-width: 35%;
+			z-index: 99;
 		}
 		.tiptitle{
 			font-size: 2vw;
 			font-family: 'Orbitron', sans-serif;
-			color: rgba(255, 255, 255, 0.6);
+			color: white;
+			z-index: 99;
 		}
 		.tipdesc{
 			font-size: 1vw;
 			font-family: 'Orbitron', sans-serif;
-			color: rgba(255, 255, 255, 0.6);
-			word-wrap: break-word;	
+			color: white;
+			word-wrap: break-word;
+			z-index: 99;
 		}
 		img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display: none;}
 	</style>
@@ -77,6 +91,7 @@
 		<h1 class="loadingtext">Loading...</h1>
 	</div>
 	<div class="deco1">
+	    <div class="deco1bg"></div>
 		<div class="tips">
 			<h1 class="tiptitle" id="tiptitle"></h1>
 			<span class="tipdesc" id="tipdesc"></span>
