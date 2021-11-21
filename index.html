@@ -1,0 +1,99 @@
+<head>
+	<meta name=viewport content="height=device-height, width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<style>
+		html {
+			background-image: url(https://cdnb.artstation.com/p/assets/images/images/036/569/393/4k/amir-zand-arrakeen-nights-artstation.jpg?1618004397);
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		.deco1{
+			width: 100%;
+			height: 25%;
+			position: absolute;
+			bottom:  0%;
+			left:  0px;
+			background-color:  rgba(0.4, 0.4, 0.4, 0.6);
+			backdrop-filter: blur(8px);
+			-webkit-backdrop-filter: blur(8px);
+			border-top-width: 1%;
+			border-top: 4px solid rgba(255,255,255,0.6);
+		}
+		.loadingcontainer{
+			width: 25%;
+			height: 25%;
+			position: absolute;
+			bottom:  12.5%;
+			left:  1%;
+		}
+		.loadingtext{
+			font-size: 2.5vw;
+			font-family: 'Orbitron', sans-serif;
+			color: rgba(255, 255, 255, 0.7);
+		}
+		.infocontainer{
+			width: 25%;
+			height: 25%;
+			position: absolute;
+			bottom:  0%;
+			max-height: 22%;
+			left:  1%;
+		}
+		.infotext{
+			font-size: 1.5vw;
+			font-family: 'Orbitron', sans-serif;
+			color: rgba(255, 255, 255, 0.7);
+		}
+		.logo{
+			width:  30%;
+		}
+		.tips{
+			top: 0%;
+			float: right;
+			margin: 2%;
+			max-width: 35%;
+		}
+		.tiptitle{
+			font-size: 2vw;
+			font-family: 'Orbitron', sans-serif;
+			color: rgba(255, 255, 255, 0.6);
+		}
+		.tipdesc{
+			font-size: 1vw;
+			font-family: 'Orbitron', sans-serif;
+			color: rgba(255, 255, 255, 0.6);
+			word-wrap: break-word;	
+		}
+		img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display: none;}
+	</style>
+</head>
+
+<body>
+	<div class="loadingcontainer">
+		<h1 class="loadingtext">Loading...</h1>
+	</div>
+	<div class="deco1">
+		<div class="tips">
+			<h1 class="tiptitle" id="tiptitle"></h1>
+			<span class="tipdesc" id="tipdesc"></span>
+		</div>
+	</div>
+	<div class="infocontainer">
+		<h1 class="infotext" id="servernametext">Server: </h1>
+		<h1 class="infotext" id="maptext">Map: </h1>
+	</div>
+
+	<!-- Load libraries -->
+	<!-- jQuery v2.1.0 -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+
+	<!-- Load scripts -->
+	<script type="text/javascript" src="js/tips.js"></script>
+
+	<!-- Show the user what percentage of files they have left to download -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
